@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <h2>Hola de nuevo!</h2>
+            <span>Por favor ingresa tus datos</span>
+            <form action="" class="formulario" id="formulario">
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <span class="formulario__input-error">El correo es incorrecto.</span>
+                </div>
+                <div class="formulario__grupo" id="grupo__password">
+                    <label for="password" class="formulario__label">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password" id="password">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <span class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</span>
+                </div>
+                <br>
+                <br>
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="register">
+            <button>Registrarse</button>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>
