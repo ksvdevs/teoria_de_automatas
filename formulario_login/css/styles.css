@@ -49,6 +49,17 @@ h2 {
     width: 80%;
 }
 
+.formulario_signup {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.formulario__grupo-inline {
+    display: flex;
+    justify-content: space-between;
+}
+
 input[type="submit"],
 button {
     border-radius: 20px;

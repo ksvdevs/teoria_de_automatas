@@ -2,13 +2,17 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
-    correo: '', //validar el correo electronico
-    password: '', //La contraseña tiene que ser de 4 a 12 dígitos.
+    correo: '',
+    password:'', 
+    usuario:''
 };
-
 const campos = {
     correo: false,
     password: false,
+    usuario: false,
+    nombre: false,
+    telefono: false,
+    fechaNacimiento: false,
 };
 
 const validarFormulario = (e) => {
@@ -18,6 +22,18 @@ const validarFormulario = (e) => {
             break;
         case "password":
             validarCampo(expresiones.password, e.target, 'password');
+            break;
+        case "usuario":
+            validarCampo(expresiones.usuario, e.target, 'usuario');
+            break;
+        case "nombre":
+            validarCampo(expresiones.nombre, e.target, 'nombre');
+            break;
+        case "telefono":
+            validarCampo(expresiones.telefono, e.target, 'telefono');
+            break;
+        case "fechaNacimiento":
+            validarCampo(expresiones.fechaNacimiento, e.target, 'fechaNacimiento');
             break;
     }
 };
