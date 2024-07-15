@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Login</title>
 </head>
+
 <body>
     <div class="container">
         <div class="login">
             <h2>Hola de nuevo!</h2>
             <span>Por favor ingresa tus datos</span>
             <form action="" class="formulario" id="formulario">
-                <div class="formulario__grupo" id="grupo__correo">
+                <div class="formulario__grupo" id="correo">
                     <label for="correo" class="formulario__label">Correo Electrónico</label>
                     <div class="formulario__grupo-input">
-                        <input type="email" class="formulario__input" name="correo" id="correo"
+                        <input type="email" class="formulario__input" name="correo" id="correo_login"
                             placeholder="correo@correo.com">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
@@ -24,7 +26,7 @@
                 <div class="formulario__grupo" id="grupo__password">
                     <label for="password" class="formulario__label">Contraseña</label>
                     <div class="formulario__grupo-input">
-                        <input type="password" class="formulario__input" name="password" id="password">
+                        <input type="text" class="formulario__input" name="password" id="password_login">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
                     <span class="formulario__input-error">Contraseña incorrecta.</span>
@@ -42,4 +44,5 @@
     </div>
     <script src="js/login.js"></script>
 </body>
+
 </html>

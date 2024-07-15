@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login</title>
 </head>
+
 <body>
-    <h1>Bienvenido al home</h1>
+    <div class="container">
+        <div class="login">
+            <h2>Validar los siguientes campos</h2>
+            <form action="" class="formulario_signup" id="formulario">
+                <div class="formulario__grupo-inline">
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Maria">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <span class="formulario__input-error">El nombre solo puede contener letras y espacios.</span>
+                    </div>
+                    <div class="formulario__grupo" id="grupo__direccion">
+                        <label for="direccion" class="formulario__label">Direccion</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="direccion" id="direccion"
+                                placeholder="Jiron Junin">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <span class="formulario__input-error">La dirección no debe contener caracteres
+                            especiales.</span>
+                    </div>
+                </div>
+                <div class="formulario__grupo-inline">
+                    <div class="formulario__grupo" id="grupo__edad">
+                        <label for="edad" class="formulario__label">Edad</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="edad" id="edad" placeholder="[18-99]">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <span class="formulario__input-error">La edad debe ser un número entre 18 y 99.</span>
+                    </div>
+                    <div class="formulario__grupo" id="grupo__codigo_producto">
+                        <label for="codigo_producto" class="formulario__label">Codigo del producto</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="codigo_producto" id="codigo_producto"
+                                placeholder="ABC-1234">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <span class="formulario__input-error">El codigo del producto tiene el formato ABC-1234.</span>
+                    </div>
+                </div>
+                <div class="formulario__grupo-inline">
+                    <div class="formulario__grupo" id="grupo__color_hexadecimal">
+                        <label for="color_hexadecimal" class="formulario__label">Color Hexadecimal</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="color_hexadecimal" id="color_hexadecimal"
+                                placeholder="#ffffff">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <span class="formulario__input-error">Validación de Color Hexadecimal.</span>
+                    </div>
+                    <div class="formulario__grupo" id="grupo__formato_decimal">
+                        <label for="formato_decimal" class="formulario__label">Formato decimal</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="formato_decimal" id="formato_decimal"
+                                placeholder="10.34">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <span class="formulario__input-error">Precio en formato decimal con hasta dos decimales</span>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="formulario__grupo formulario__grupo-inline">
+                    <div class="formulario__grupo-input">
+                        <button type="submit" class="formulario__btn">Registrar</button>
+                    </div>
+                    <div class="formulario__grupo-input">
+                        <button onclick="cerrarSesion()" class="cerrar-sesion-btn">Cerrar Sesión</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/signup.js"></script>
 </body>
+
 </html>
